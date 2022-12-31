@@ -1,1 +1,1 @@
-# faktor.github.io
+# Faktor.github.io
