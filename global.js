@@ -5,7 +5,7 @@ const configAds = [
 		"target-selector":"body"
 	},
 	{
-		"src":"https://readydolphinpoverty.com/4a/00/1e/4a001e886418d57f6154e262bac9b581.js",
+		"src":"",
 		"name-element":"script",
 		"target-selector":"body"
 	}
