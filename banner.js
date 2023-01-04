@@ -1,9 +1,11 @@
 var banner = [
-["https://c.lazada.co.id/t/c.b1NRSg?sub_aff_id=ID_1", "https://faktor.my.id/img/ID_1.jpg"],
-["https://c.lazada.co.id/t/c.b1NRSQ?sub_aff_id=ID_2", "https://faktor.my.id/img/ID_2.jpg"],
-["https://c.lazada.co.id/t/c.b1NjFr?sub_aff_id=ID_3", "https://faktor.my.id/img/ID_3.jpeg"],
-["https://c.lazada.co.id/t/c.b1NjFx?sub_aff_id=ID_4", "https://faktor.my.id/img/ID_4.jpeg"],
-["https://c.lazada.co.id/t/c.b1NR7M?sub_aff_id=ID_S", "https://faktor.my.id/img/ID_S.jpeg"]
+["https://shope.ee/20MhBJCUgk", "SHOPE_1.jpg"],
+["https://shope.ee/1fjqmhDlMi", "SHOPE_3.jpg"],
+["https://shope.ee/1q3Gz0D81l", "SHOPE_4.jpg"],
+["https://shope.ee/10U9zTGIie", "SHOPE_6.jpg"],
+["https://shope.ee/1AnaBmFfNh", "SHOPE_7.jpg"],
+["https://shope.ee/frJarHZOc", "SHOPE_8.jpg"],
+["https://shope.ee/qAjnAGw3f", "SHOPE_9.jpg"]
 
 ];
 function shuffle(f) {
