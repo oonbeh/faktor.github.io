@@ -1,11 +1,11 @@
 var banner = [
-["https://shope.ee/20MhBJCUgk", "SHOPE_1.jpg"],
-["https://shope.ee/1fjqmhDlMi", "SHOPE_3.jpg"],
-["https://shope.ee/1q3Gz0D81l", "SHOPE_4.jpg"],
-["https://shope.ee/10U9zTGIie", "SHOPE_6.jpg"],
-["https://shope.ee/1AnaBmFfNh", "SHOPE_7.jpg"],
-["https://shope.ee/frJarHZOc", "SHOPE_8.jpg"],
-["https://shope.ee/qAjnAGw3f", "SHOPE_9.jpg"]
+["https://shope.ee/20MhBJCUgk", "https://faktor.my.id/img/SHOPE_1.jpg"],
+["https://shope.ee/1fjqmhDlMi", "https://faktor.my.id/img/SHOPE_3.jpg"],
+["https://shope.ee/1q3Gz0D81l", "https://faktor.my.id/img/SHOPE_4.jpg"],
+["https://shope.ee/10U9zTGIie", "https://faktor.my.id/img/SHOPE_6.jpg"],
+["https://shope.ee/1AnaBmFfNh", "https://faktor.my.id/img/SHOPE_7.jpg"],
+["https://shope.ee/frJarHZOc", "https://faktor.my.id/img/SHOPE_8.jpg"],
+["https://shope.ee/qAjnAGw3f", "https://faktor.my.id/img/SHOPE_9.jpg"]
 
 ];
 function shuffle(f) {
