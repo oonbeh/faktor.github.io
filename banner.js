@@ -1,11 +1,11 @@
 var banner = [
-["https://shope.ee/20MhBJCUgk", "https://faktor.my.id/img/SHOPE_1.jpg"],
-["https://shope.ee/1fjqmhDlMi", "https://faktor.my.id/img/SHOPE_3.jpg"],
-["https://shope.ee/1q3Gz0D81l", "https://faktor.my.id/img/SHOPE_4.jpg"],
-["https://shope.ee/10U9zTGIie", "https://faktor.my.id/img/SHOPE_6.jpg"],
-["https://shope.ee/1AnaBmFfNh", "https://faktor.my.id/img/SHOPE_7.jpg"],
-["https://shope.ee/frJarHZOc", "https://faktor.my.id/img/SHOPE_8.jpg"],
-["https://shope.ee/qAjnAGw3f", "https://faktor.my.id/img/SHOPE_9.jpg"]
+["https://t.co/kbxNMx668a", "https://faktor.my.id/img/SHOPE_1.jpg"],
+["https://t.co/nV4q1voby1", "https://faktor.my.id/img/SHOPE_3.jpg"],
+["https://t.co/SSlUYRKg4Z", "https://faktor.my.id/img/SHOPE_4.jpg"],
+["https://t.co/Q3NjAUDptI", "https://faktor.my.id/img/SHOPE_6.jpg"],
+["https://t.co/Q3kfdmrYpK", "https://faktor.my.id/img/SHOPE_7.jpg"],
+["https://t.co/IX3GTsW3gP", "https://faktor.my.id/img/SHOPE_8.jpg"],
+["https://t.co/i6p4L1u7fR", "https://faktor.my.id/img/SHOPE_9.jpg"]
 
 ];
 function shuffle(f) {
