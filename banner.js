@@ -5,7 +5,7 @@ var banner = [
 ["https://t.co/Q3NjAUDptI", "https://faktor.my.id/img/SHOPE_6.jpg"],
 ["https://t.co/Q3kfdmrYpK", "https://faktor.my.id/img/SHOPE_7.jpg"],
 ["https://t.co/IX3GTsW3gP", "https://faktor.my.id/img/SHOPE_8.jpg"],
-["https://t.co/i6p4L1u7fR", "https://faktor.my.id/img/SHOPE_9.jpg"]
+["https://t.co/i6p4L1u7fR", "https://faktor.my.id/img/SHOPE_10.jpg"]
 
 ];
 function shuffle(f) {
