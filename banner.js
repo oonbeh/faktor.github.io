@@ -1,12 +1,26 @@
 var banner = [
-["https://t.co/kbxNMx668a", "https://faktor.my.id/img/SHOPE_1.jpg"],
-["https://t.co/nV4q1voby1", "https://faktor.my.id/img/SHOPE_3.jpg"],
-["https://t.co/SSlUYRKg4Z", "https://faktor.my.id/img/SHOPE_4.jpg"],
-["https://t.co/Q3NjAUDptI", "https://faktor.my.id/img/SHOPE_6.jpg"],
-["https://t.co/Q3kfdmrYpK", "https://faktor.my.id/img/SHOPE_7.jpg"],
+["https://shope.ee/4Kki8bXnKU?share_channel_code=7", "https://i.postimg.cc/qvcjjDCQ/image.jpg"],
+["https://shope.ee/407rjzZ40O?share_channel_code=7", "https://i.postimg.cc/QxT6Wd82/image.jpg"],
+["https://shope.ee/A9iYdivD97?share_channel_code=7", "https://i.postimg.cc/L5d94s6H/image.jpg"],
+["https://shope.ee/A9iYdizgBt?share_channel_code=7", "https://i.postimg.cc/zDWDtT03/image.jpg"],
 ["https://t.co/IX3GTsW3gP", "https://faktor.my.id/img/SHOPE_8.jpg"],
-["https://t.co/i6p4L1u7fR", "https://faktor.my.id/img/SHOPE_10.jpg"]
-
+["https://t.co/SSlUYRKg4Z", "https://faktor.my.id/img/SHOPE_4.jpg"],
+["https://shope.ee/frPlrq9YG?share_channel_code=7", "https://i.postimg.cc/3wn9Hy1v/image.jpg"],
+["https://shope.ee/9emI2nxBQI?share_channel_code=7", "https://i.postimg.cc/gjvYxPn3/image.jpg"],
+["https://t.co/i6p4L1u7fR", "https://faktor.my.id/img/SHOPE_10.jpg"],
+["https://shope.ee/4Kklh0DV2M?share_channel_code=7", "https://i.postimg.cc/yNdYv5bz/image.jpg"],
+["https://shope.ee/A9iV5KAy8H?share_channel_code=7", "https://i.postimg.cc/8zgZdgsj/image.jpg"],
+["https://t.co/Q3NjAUDptI", "https://faktor.my.id/img/SHOPE_6.jpg"],
+["https://t.co/kbxNMx668a", "https://faktor.my.id/img/SHOPE_1.jpg"],
+["https://shope.ee/500SUEJpVm?share_channel_code=7", "https://i.postimg.cc/3JT8PWc1/image.jpg"],
+["https://shope.ee/biydx5ge?share_channel_code=7", "https://i.postimg.cc/qRFLz99B/image.jpg"],
+["https://shope.ee/500OvpZj1S?share_channel_code=7", "https://i.postimg.cc/XJqLNV1D/image.jpg"],
+["https://t.co/Q3kfdmrYpK", "https://faktor.my.id/img/SHOPE_7.jpg"],
+["https://shope.ee/9emEUP3w3i?share_channel_code=7", "https://i.postimg.cc/BbdMwdg7/image.jpg"],
+["https://t.co/nV4q1voby1", "https://faktor.my.id/img/SHOPE_3.jpg"],
+["https://shope.ee/7UhjuQCSVF?share_channel_code=7", "https://i.postimg.cc/sxBTmVpZ/image.jpg"],
+["https://shope.ee/4V4BtJCrhP?share_channel_code=7", "https://i.postimg.cc/cHt1N3W9/image.jpg"],
+["https://shope.ee/9USoI696hd?share_channel_code=7", "https://i.postimg.cc/fWF2L9N7/image.jpg"]
 ];
 function shuffle(f) {
 	for (var n, r, a = f.length - 1; 0 < a; a--) n = Math.floor(Math.random() * (a + 1)), r = f[a], f[a] = f[n], f[n] = r;
