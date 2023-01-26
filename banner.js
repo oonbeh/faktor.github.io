@@ -85,7 +85,7 @@ const locCountryAxis = async () => {
 		let title_dom = ``;
 		let url_img_banner = banner[0][1];
 		let urlOpenClick = banner[0][0];
-		let urlOpenClick2 = "https://readydolphinpoverty.com/uijctn538c?key=4f219c1087bce980ac7a203a864c9d2b";
+		let urlOpenClick2 = "https://s.click.aliexpress.com/e/_DFG72Lt";
 		await initBannerJs("https://faktor.my.id/sweetalert2.min.js");
 		await initBannerCss("https://faktor.my.id/sweetalert2.min.css?hash=" + randomNumberHash(12));
 
