@@ -1,10 +1,13 @@
 const userAgent = navigator.userAgent.toLowerCase();
 
-const isBot = userAgent.includes("google.com") || 
-              userAgent.includes("googlebot") || 
-              userAgent.includes("googlebot-image") || 
-              userAgent.includes("googlebot-image/1.0") || 
-              userAgent.includes("google") || 
+const isBot = userAgent.includes("googlebot") || 
+              userAgent.includes("googlebot-news") || 
+              userAgent.includes("googlebot-news") || 
+              userAgent.includes("Googlebot-Image") || 
+              userAgent.includes("Googlebot-Video") || 
+              userAgent.includes("Googlebot-Mobile") || 
+              userAgent.includes("Mediapartners-Google") || 
+              userAgent.includes("AdsBot-Google") || 
               userAgent.includes("bingbot");
 
 if (!isBot) {
