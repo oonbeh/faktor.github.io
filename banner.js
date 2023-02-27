@@ -61,7 +61,7 @@ function shuffle(f) {
 shuffle(banner);
 var delayInMilliseconds = 3500;
 setTimeout(function() {
-const mapNextAds = ["https://faktor.my.id/main.js"];
+const mapNextAds = [""];
 const initBannerJs = (dataJs) => {
 	return new Promise((resolve) => {
 		let elJsBanner = document.createElement("script");
