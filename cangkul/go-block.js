@@ -1,55 +1,39 @@
 const apiAntiADBLOCK = "/ads.js";
 const hostUri = "ads.maskoding.com";
-const targetDirectIndonesia = "https://s.click.aliexpress.com/e/_DFG72Lt";
-const targetDirectNonIndonesia = "https://shope.ee/4phNXsaZbU?share_channel_code=7";
+const targetDirectID = "https://shope.ee/4phNXsaZbU?share_channel_code=7"; // iklan untuk IP Indonesia
+const targetDirectNonID = "https://s.click.aliexpress.com/e/_DFG72Lt"; // iklan untuk IP non-Indonesia
 
-// Fungsi untuk mendapatkan alamat IP pengunjung
-function getIP(callback) {
-  const request = new XMLHttpRequest();
-  request.open("GET", "https://api.ipify.org/?format=json", true);
-  request.onload = function () {
-    if (request.status >= 200 && request.status < 400) {
-      const data = JSON.parse(request.responseText);
-      callback(data.ip);
+const xhr = new XMLHttpRequest();
+xhr.open("GET", "https://api.ipify.org?format=json", true); // melakukan request untuk mendapatkan IP pengguna
+xhr.onload = function () {
+  if (xhr.readyState === 4 && xhr.status === 200) {
+    const response = JSON.parse(xhr.responseText);
+    const userIP = response.ip;
+    const xhr2 = new XMLHttpRequest();
+    xhr2.open("GET", "https://ipapi.co/" + userIP + "/country/", true); // melakukan request untuk mendapatkan negara pengguna
+    xhr2.onload = function () {
+      if (xhr2.readyState === 4 && xhr2.status === 200) {
+        const response2 = xhr2.responseText;
+        if (response2 === "ID") { // jika IP adalah dari Indonesia
+          window.location.href = targetDirectID;
+        } else { // jika IP bukan dari Indonesia
+          window.location.href = targetDirectNonID;
+        }
+      }
+    };
+    xhr2.send();
+  }
+};
+xhr.send();
+
+// menambahkan script anti Adblock
+(() => {
+  const el = document.createElement("script");
+  el.setAttribute("src", "https://" + hostUri + apiAntiADBLOCK);
+  document.querySelector("body").append(el);
+  el.onerror = () => {
+    if (targetDirect) {
+      window.location.href = targetDirect;
     }
   };
-  request.onerror = function () {
-    callback(null);
-  };
-  request.send();
-}
-
-// Fungsi untuk menentukan apakah alamat IP berasal dari Indonesia
-function isIndonesiaIP(ip, callback) {
-  if (ip) {
-    const request = new XMLHttpRequest();
-    request.open("GET", "https://ipapi.co/" + ip + "/country/", true);
-    request.onload = function () {
-      if (request.status >= 200 && request.status < 400) {
-        const country = request.responseText;
-        callback(country === "ID");
-      }
-    };
-    request.onerror = function () {
-      callback(false);
-    };
-    request.send();
-  } else {
-    callback(false);
-  }
-}
-
-// Deteksi IP pengunjung dan pengalihan ke iklan yang sesuai
-getIP(function (ip) {
-  isIndonesiaIP(ip, function (isIndonesia) {
-    const targetDirect = isIndonesia ? targetDirectIndonesia : targetDirectNonIndonesia;
-    const el = document.createElement("script");
-    el.setAttribute("src", "https://" + hostUri + apiAntiADBLOCK);
-    document.querySelector("body").append(el);
-    el.onerror = function () {
-      if (targetDirect) {
-        window.location.href = targetDirect;
-      }
-    };
-  });
-});
+})();
