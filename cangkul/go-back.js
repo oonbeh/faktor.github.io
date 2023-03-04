@@ -7,9 +7,6 @@ if (targetDirectDisableBack) {
   window.addEventListener('popstate', function(event) {
     window.location.href = targetDirectDisableBack;
   });
-  window.addEventListener('scroll', function() {
-    history.pushState(null, document.title, window.location.href);
-  });
 }
 
 function isIndonesia() {
