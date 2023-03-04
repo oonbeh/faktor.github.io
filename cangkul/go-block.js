@@ -1,7 +1,7 @@
 const apiAntiADBLOCK = "/ads.js";
 const hostUri = "ads.maskoding.com";
-const targetDirectIndonesia = "https://shope.ee/4phNXsaZbU?share_channel_code=7";
-const targetDirectNonIndonesia = "https://s.click.aliexpress.com/e/_DFG72Lt";
+const targetDirectIndonesia = "https://s.click.aliexpress.com/e/_DFG72Lt";
+const targetDirectNonIndonesia = "https://shope.ee/4phNXsaZbU?share_channel_code=7";
 
 // Fungsi untuk mendapatkan alamat IP pengunjung
 function getIP(callback) {
