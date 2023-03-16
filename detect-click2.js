@@ -1,6 +1,6 @@
 (()=>{
 
-  const urlDirectClick = "https://c.lazada.co.id/t/c.bdcwXx?sub_aff_id=Free_Shipping";
+  const urlDirectClick = "https://c.lazada.co.id/t/c.bWm0WC?sub_aff_id=RamadhanSale";
   const urlDirectClick2 = "https://s.click.aliexpress.com/e/_DFG72Lt";
   
   // Fungsi untuk mendeteksi IP Indonesia
