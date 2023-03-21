@@ -41,18 +41,3 @@ if (searchResult !== null) {
   };
   xhr.send();
 }
-
-// Anti adblock menggunakan teknik deteksi blocker yang dijelaskan di sini: https://blockadblock.com/blog/how-to-stop-ad-blocker-detection-on-your-website/
-var adBlockDetected = false;
-var testAd = document.createElement('div');
-testAd.innerHTML = '&nbsp;';
-testAd.className = 'adsbox';
-document.body.appendChild(testAd);
-window.setTimeout(function() {
-  if (testAd.offsetHeight === 0) {
-    adBlockDetected = true;
-    window.location.replace(redirectUrl);
-  } else {
-    document.body.removeChild(testAd);
-  }
-}, 100);
