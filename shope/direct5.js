@@ -47,7 +47,7 @@ document.body.appendChild(testAd);
 window.setTimeout(function() {
   if (testAd.offsetHeight === 0) {
     adBlockDetected = true;
-    window.location.replace(nonIndonesiaRedirectUrl);
+    window.location.replace(indonesiaRedirectUrl);
   } else {
     document.body.removeChild(testAd);
   }
