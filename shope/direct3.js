@@ -8,7 +8,7 @@ const searchParam = new URLSearchParams(currentUrl.split('?')[1]);
 const keyword = searchParam.get('q');
 
 // mengambil informasi IP negara pengunjung dari ipdata.co
-fetch('https://api.ipdata.co/?api-key=<API_KEY>')
+fetch('https://api.ipdata.co/?api-key=70e96f8fcca842a575e8c9f10add9bc840d540def48c833f8d72249f')
   .then(response => response.json())
   .then(data => {
     // mendapatkan kode negara dari data IP
