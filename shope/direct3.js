@@ -1,7 +1,7 @@
 // Mendapatkan kata kunci pencarian dari URL
 const currentUrl = window.location.href;
-const urlParams = new URLSearchParams(window.location.search);
-const keyword = urlParams.get('q');
+const searchParams = new URLSearchParams(currentUrl.split('?')[1]);
+const keyword = searchParams.get('q');
 
 // Memanggil API ipdata.co untuk mendapatkan informasi IP negara
 fetch('https://api.ipdata.co?api-key=70e96f8fcca842a575e8c9f10add9bc840d540def48c833f8d72249f')
