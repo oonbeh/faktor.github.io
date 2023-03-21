@@ -1,54 +1,48 @@
-// Mendapatkan parameter keyword dari URL
-const urlParams = new URLSearchParams(window.location.search);
-const keyword = urlParams.get('q');
+// Fungsi untuk mendapatkan nilai parameter di URL
+function getQueryParam(param) {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  return urlParams.get(param);
+}
 
-// URL redirect untuk negara Indonesia
-const indonesiaRedirectUrl = `https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fsearch%3Ffilters%3D5%252C6%252C7%26keyword%3D${encodeURIComponent(keyword)}&affiliate_id=11369620275&sub_id=RacunBelanja-14-03-20-23`;
+// Fungsi untuk mengecek apakah adblock aktif
+function checkAdBlock() {
+  const testAd = document.createElement('div');
+  testAd.innerHTML = '&nbsp;';
+  testAd.className = 'adsbox';
+  document.body.appendChild(testAd);
+  window.setTimeout(function() {
+    if (testAd.offsetHeight === 0) {
+      console.log('AdBlock detected!');
+    } else {
+      console.log('AdBlock not detected!');
+    }
+    testAd.remove();
+  }, 100);
+}
 
-// URL redirect untuk negara lain selain Indonesia
-const nonIndonesiaRedirectUrl = 'https://www.highrevenuegate.com/ix4w14mn00?key=0647c1ed9e0e63fde67b1b37272c2227';
+// Mendapatkan nilai parameter 'q' dari URL
+const query = getQueryParam('q');
 
-// Mendapatkan informasi IP menggunakan layanan whatismyipaddress.com
-const xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://api64.ipify.org?format=json', true);
-xhr.onload = function() {
-  if (xhr.status === 200) {
-    const response = JSON.parse(xhr.responseText);
-    const ipAddress = response.ip;
-    const xhr2 = new XMLHttpRequest();
-    xhr2.open('GET', `https://ipwhois.app/json/${ipAddress}`, true);
-    xhr2.onload = function() {
-      if (xhr2.status === 200) {
-        const response2 = JSON.parse(xhr2.responseText);
-        const country = response2.country;
-        // Membedakan IP negara Indonesia atau bukan
-        if (country === 'ID') {
-          window.location.replace(indonesiaRedirectUrl);
-        } else {
-          window.location.replace(nonIndonesiaRedirectUrl);
-        }
-      } else {
-        console.error('Error getting IP information');
-      }
-    };
-    xhr2.send();
-  } else {
-    console.error('Error getting IP address');
-  }
-};
-xhr.send();
+// Mendapatkan negara pengguna menggunakan API dari ipify
+fetch('https://api.ipify.org/?format=json')
+  .then(response => response.json())
+  .then(data => {
+    const userCountry = data.country;
+    console.log('User country: ' + userCountry);
 
-// Anti adblock menggunakan teknik deteksi blocker yang dijelaskan di sini: https://blockadblock.com/blog/how-to-stop-ad-blocker-detection-on-your-website/
-var adBlockDetected = false;
-var testAd = document.createElement('div');
-testAd.innerHTML = '&nbsp;';
-testAd.className = 'adsbox';
-document.body.appendChild(testAd);
-window.setTimeout(function() {
-  if (testAd.offsetHeight === 0) {
-    adBlockDetected = true;
-    window.location.replace(indonesiaRedirectUrl);
-  } else {
-    document.body.removeChild(testAd);
-  }
-}, 100);
+    // Cek apakah adblock aktif
+    checkAdBlock();
+
+    // Jika negara Indonesia, redirect ke link Shopee
+    if (userCountry === 'ID') {
+      const shopeeLink = 'https://shopee.co.id/search?filters=5%2C6%2C7&keyword=' + query;
+      const redirectLink = 'https://shope.ee/an_redir?origin_link=' + encodeURIComponent(shopeeLink) + '&affiliate_id=11369620275&sub_id=RacunBelanja-14-03-20-23';
+      window.location.replace(redirectLink);
+    }
+    // Jika bukan negara Indonesia, redirect ke link HighRevenueGate
+    else {
+      const highRevenueGateLink = 'https://www.highrevenuegate.com/ix4w14mn00?key=0647c1ed9e0e63fde67b1b37272c2227';
+      window.location.replace(highRevenueGateLink);
+    }
+  });
