@@ -1,4 +1,5 @@
 // Mendapatkan kata kunci pencarian dari URL
+const currentUrl = window.location.href;
 const urlParams = new URLSearchParams(window.location.search);
 const keyword = urlParams.get('q');
 
