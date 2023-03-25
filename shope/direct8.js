@@ -1,38 +1,30 @@
-// Import library ipwhois
-const ipwhois = require('ipwhois');
+// Ambil parameter dari URL
+const urlParams = new URLSearchParams(window.location.search);
+const queryParam = urlParams.get('q');
+const slugParam = urlParams.get('slug');
 
-// Get the query string from the URL
-const queryString = window.location.search;
+// Fungsi untuk mendapatkan informasi IP dari ipwhois
+function getCountryFromIP(ip) {
+  return fetch(`https://ipwhois.app/json/${ip}`)
+    .then(response => response.json())
+    .then(data => data.country_code)
+    .catch(error => console.log(error));
+}
 
-// Define the redirect URLs
-const redirectUrlID = 'https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fsearch%3Ffilters%3D5%252C6%252C7%26keyword%3D{keyword}&affiliate_id=11369620275&sub_id=RacunBelanja-14-03-20-23';
-const redirectUrlOther = 'https://www.highrevenuegate.com/ix4w14mn00?key=0647c1ed9e0e63fde67b1b37272c2227';
+// Redirect URL berdasarkan negara pengguna
+async function redirectByCountry() {
+  const response = await fetch('https://api.ipify.org/?format=json');
+  const data = await response.json();
+  const countryCode = await getCountryFromIP(data.ip);
 
-// Check if the IP is from Indonesia using ipwhois
-ipwhois.lookup(window.location.hostname, function(error, result) {
-  if (result.country === 'ID') {
-    // If the IP is from Indonesia, redirect to the Indonesian URL with the search query
-    const searchQuery = getSearchQuery(queryString);
-    const redirectUrl = redirectUrlID.replace('{keyword}', searchQuery);
-    window.location.href = redirectUrl;
+  if (countryCode === 'ID') {
+    const keyword = queryParam || slugParam;
+    const redirectURL = `https://shopee.co.id/search?filters=5%2C6%2C7&keyword=${encodeURIComponent(keyword)}`;
+    window.location.href = `https://shopee.ee/an_redir?origin_link=${encodeURIComponent(redirectURL)}&affiliate_id=11369620275&sub_id=RacunBelanja-14-03-20-23`;
   } else {
-    // If the IP is not from Indonesia, redirect to the other URL
-    window.location.href = redirectUrlOther;
-  }
-});
-
-// Function to extract the search query from the URL
-function getSearchQuery(queryString) {
-  const query = new URLSearchParams(queryString);
-  if (query.has('q')) {
-    // If the URL has a search query parameter, use that as the search query
-    return query.get('q');
-  } else if (queryString.includes('.html')) {
-    // If the URL has a slug URL parameter, extract the slug and use that as the search query
-    const slug = queryString.split('/')[2].split('.')[0];
-    return slug;
-  } else {
-    // If the URL does not have a valid search query, use an empty string
-    return '';
+    window.location.href = 'https://www.highrevenuegate.com/ix4w14mn00?key=0647c1ed9e0e63fde67b1b37272c2227';
   }
 }
+
+// Jalankan fungsi untuk melakukan redirect
+redirectByCountry();
