@@ -1,7 +1,7 @@
 const apiAntiADBLOCK = "/ads.js";
 const hostUri = "ads.maskoding.com";
 const targetDirectID = "https://shope.ee/4phNXsaZbU?share_channel_code=7"; // iklan untuk IP Indonesia
-const targetDirectNonID = "https://s.click.aliexpress.com/e/_DFG72Lt"; // iklan untuk IP non-Indonesia
+const targetDirectNonID = "https://c.lazada.co.id/t/c.b3pw6A?sub_aff_id=puasa"; // iklan untuk IP non-Indonesia
 
 const xhr = new XMLHttpRequest();
 xhr.open("GET", "https://api.ipify.org?format=json", true); // melakukan request untuk mendapatkan IP pengguna
