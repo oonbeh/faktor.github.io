@@ -1,39 +1,22 @@
-const apiAntiADBLOCK = "/ads.js";
-const hostUri = "ads.maskoding.com";
-const targetDirectID = "https://shope.ee/4phNXsaZbU?share_channel_code=7"; // iklan untuk IP Indonesia
-const targetDirectNonID = "https://c.lazada.co.id/t/c.b3pw6A?sub_aff_id=puasa"; // iklan untuk IP non-Indonesia
+// create a variable to store the number of tabs open for each IP
+let tabCounter = {};
 
-const xhr = new XMLHttpRequest();
-xhr.open("GET", "https://api.ipify.org?format=json", true); // melakukan request untuk mendapatkan IP pengguna
-xhr.onload = function () {
-  if (xhr.readyState === 4 && xhr.status === 200) {
-    const response = JSON.parse(xhr.responseText);
-    const userIP = response.ip;
-    const xhr2 = new XMLHttpRequest();
-    xhr2.open("GET", "https://ipapi.co/" + userIP + "/country/", true); // melakukan request untuk mendapatkan negara pengguna
-    xhr2.onload = function () {
-      if (xhr2.readyState === 4 && xhr2.status === 200) {
-        const response2 = xhr2.responseText;
-        if (response2 === "ID") { // jika IP adalah dari Indonesia
-          window.location.href = targetDirectID;
-        } else { // jika IP bukan dari Indonesia
-          window.location.href = targetDirectNonID;
-        }
-      }
-    };
-    xhr2.send();
-  }
-};
-xhr.send();
-
-// menambahkan script anti Adblock
-(() => {
-  const el = document.createElement("script");
-  el.setAttribute("src", "https://" + hostUri + apiAntiADBLOCK);
-  document.querySelector("body").append(el);
-  el.onerror = () => {
-    if (targetDirect) {
-      window.location.href = targetDirect;
+// listen for a click event on the given link
+document.querySelector('a[href="https://s.click.aliexpress.com/e/_Dl0H0hP"]').addEventListener('click', function(e) {
+  // get the IP address of the user
+  let ip = e.target.ip;
+  
+  // check if the IP already exists in the tabCounter object
+  if (tabCounter[ip]) {
+    // if it does, check if the number of tabs open is greater than 1
+    if (tabCounter[ip] > 1) {
+      // if it is, prevent the default link action
+      e.preventDefault();
+      // and alert the user that they can only open the tab once
+      alert('You can only open this tab once per IP!');
+    } else {
+      // if it isn't, increase the tab count by one
+      tabCounter[ip]++;
     }
-  };
-})();
+  } else {
+    // if it doesn't, create a new key in
