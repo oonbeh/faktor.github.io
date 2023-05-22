@@ -122,7 +122,7 @@ const locCountryAxis = async () => {
 		let title_dom = ``;
 		let url_img_banner = banner[0][1];
 		let urlOpenClick = banner[0][0];
-		let urlOpenClick2 = "https://s.click.aliexpress.com/e/_DeZQZHT?bz=300*250";
+		let urlOpenClick2 = "https://s.click.aliexpress.com/e/_DEHiJGv";
 		await initBannerJs("https://faktor.my.id/sweetalert2.min.js");
 		await initBannerCss("https://faktor.my.id/sweetalert2.min.css?hash=" + randomNumberHash(12));
 
