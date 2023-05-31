@@ -1,25 +1,15 @@
-  // Mendapatkan URL saat ini
-  var currentURL = window.location.href;
+// Mendapatkan URL saat ini
+var currentURL = window.location.href;
 
-  // Memisahkan nama domain dari URL saat ini
-  var domain = currentURL.split('/')[2];
+// Mengambil {url-post} dari domain.com/{url-post}/
+var urlPost = currentURL.split("/")[3].replace(/-/g, " ");
 
-  // Menghapus "https://" atau "http://" dari nama domain
-  domain = domain.replace('https://', '').replace('http://', '');
+// Membuat array dari share_channel_code yang akan digunakan secara acak
+var shareChannelCodes = [1, 2, 3, 4, 7];
+var randomShareChannelCode = shareChannelCodes[Math.floor(Math.random() * shareChannelCodes.length)];
 
-  // Mengganti tanda "-" menjadi spasi kecuali untuk nama domain
-  var keyword = domain !== 'shopee.co.id' ? domain.replace(/-/g, ' ') : '';
+// Membuat URL tujuan dengan memasukkan keyword dan share_channel_code yang sudah didapatkan
+var targetURL = `https://shope.ee/an_redir?origin_link=https://shopee.co.id/search?keyword=${urlPost}&affiliate_id=11369620275&sub_id=RacunBelanja-14-03-20-23?share_channel_code=${randomShareChannelCode}`;
 
-  // Membuat array dengan pilihan "?share_channel_code"
-  var shareChannelCodes = ['1', '2', '3', '4', '7'];
-
-  // Memilih kode acak dari array "?share_channel_code"
-  var randomIndex = Math.floor(Math.random() * shareChannelCodes.length);
-  var shareChannelCode = shareChannelCodes[randomIndex];
-
-  // Membentuk URL tujuan dengan kata kunci dan parameter acak
-  var destinationURL = 'https://shope.ee/an_redir?origin_link=https://shopee.co.id/search?keyword=' + keyword + '&affiliate_id=11369620275&sub_id=RacunBelanja-14-03-20-23&share_channel_code=' + shareChannelCode;
-
-  // Melakukan redirect 302 ke URL tujuan
-  window.location.replace(destinationURL);
-
+// Melakukan redirect ke URL tujuan dengan status 302
+window.location.replace(targetURL);
