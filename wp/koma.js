@@ -1,12 +1,14 @@
-// Mendapatkan keyword dari URL
-const url = window.location.href;
-const keyword = url.split("/")[3];
+// Mendapatkan URL saat ini
+var currentURL = window.location.href;
 
-// Generate angka random untuk share_channel_code
-const randomCode = Math.floor(Math.random() * 5) + 1;
+// Mendapatkan kata kunci dari URL
+var keyword = currentURL.replace("racunn.my.id/", "").replace("-", " ");
 
-// Membuat URL tujuan dengan keyword dan share_channel_code yang dihasilkan
-const destinationURL = `https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.co.id%2Fsearch%3Ffilters%3D5%252C6%252C7%26keyword%3D${keyword}&affiliate_id=11369620275&sub_id=RacunBelanja-14-03-20-23?share_channel_code=${randomCode}`;
+// Membangkitkan kode share_channel_code secara acak
+var shareChannelCode = Math.floor(Math.random() * 5) + 1;
 
-// Redirect menggunakan status code 302
-window.location.replace(destinationURL);
+// Membuat URL tujuan dengan kata kunci dan share_channel_code
+var targetURL = `https://shope.ee/an_redir?origin_link=https://shopee.co.id/search?keyword=${keyword}&affiliate_id=11369620275&sub_id=RacunBelanja-14-03-20-23?share_channel_code=${shareChannelCode}`;
+
+// Mengarahkan pengguna menggunakan kode status 302
+window.location.replace(targetURL);
