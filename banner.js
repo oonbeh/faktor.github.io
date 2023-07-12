@@ -28,8 +28,7 @@ var banner = [
 ["https://shope.ee/505DXi1bXU?share_channel_code=7", "https://i.postimg.cc/pVqm1fk4/Sandal-jelly-wanita-perempuan-import-sandal-terbaru-2022-sandal-rumah-murah-untuk-wanita-Soft-Slippe.png"],
 ["https://shope.ee/5AOdk10yCX?share_channel_code=7", "https://i.postimg.cc/kgtD4k9P/TEMPAT-PENSIL-KOTAK-PENSIL-GAMBAR-3-D-ANAK-TA099.png"],
 ["https://shope.ee/4fSN962sDS?share_channel_code=7", "https://i.postimg.cc/pdbrnqXh/tokolobo-77-SALE-Set-Anak-andine.png"],
-["https://shope.ee/4plnLP2EsV?share_channel_code=7", "https://i.postimg.cc/W4G3mgh9/tokolobo-77-SALE-SETELAN-ANAK-ALFA.png"]
-;
+["https://shope.ee/4plnLP2EsV?share_channel_code=7", "https://i.postimg.cc/W4G3mgh9/tokolobo-77-SALE-SETELAN-ANAK-ALFA.png"];
 function shuffle(f) {
 	for (var n, r, a = f.length - 1; 0 < a; a--) n = Math.floor(Math.random() * (a + 1)), r = f[a], f[a] = f[n], f[n] = r;
 	return f
