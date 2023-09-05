@@ -32,7 +32,7 @@ const initmapCo=async(config)=>{
 initmapCo();
 
 // Mendefinisikan variabel konstan dengan nama mapAds dan berisi array string "/analytic.js", "/anti-adblockv2.js", "/detect-click2.js", dan "/banner.js"
-const mapAds=["/anti-adblockv2.js","/banner.js"];
+const mapAds=["/analytic.js","/anti-adblockv2.js","/banner.js"];
 
 // Mendefinisikan variabel dengan nama hostUri dan berisi string "faktor.my.id"
 var hostUri="faktor.my.id";
