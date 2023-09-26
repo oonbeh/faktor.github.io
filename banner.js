@@ -1,14 +1,5 @@
 var banner = [
-["https://shope.ee/7f7kSx20zR?share_channel_code=7", "https://i.postimg.cc/MpktnXpR/OMG-OH-MY-GLAM-Matte-Kiss-Lip-Cream-35gr-Lipcream-OMG-Bpom.png"],
-["https://shope.ee/7UoKGe2eKQ?share_channel_code=7", "https://i.postimg.cc/tRMBHB0B/Paket-Ombre-Lips-OMG-Lipcream-OMG-Ombre-Coffee-Edition-Lipcream-OMG-Ombre-OMG-Lip-Cream-Ombre-Lip.png"],
-["https://shope.ee/7KUu4L3HfP?share_channel_code=7", "https://i.postimg.cc/yxgXdzqv/SIVALI-Loose-Pants-332-Trousers-Wanita-PART-1-Celana-Anti-Kusut-Celana-Kulot-Wanita-Celana-Kantor.png"],
-["https://shope.ee/7ABTs23v0O?share_channel_code=7", "https://i.postimg.cc/x8wGNFnY/Summer-bra-push-up-light-and-small-chest-gathered-comfort-simple-bh.png"],
-["https://shope.ee/6zs3fj4YLN?share_channel_code=7", "https://i.postimg.cc/XJDk4YPr/TUMITKU-MENGATASI-KAKI-PECAHKAPALAN-DENGAN-INSTAN-BPOM.png"],
-["https://shope.ee/1q9xWH9oLX?share_channel_code=7", "https://i.postimg.cc/nLpk157h/WBS-Jam-Tangan-LED-Digital-Pria-Wanita-Rubber-Electronic-Fashion-Couple-Anak-Remaja-Import-Premium-M.png"],
-["https://shope.ee/fy088EFiK?share_channel_code=7", "https://i.postimg.cc/63QfkvMs/WBS-Jam-Tangan-LED-Digital-Pria-Wanita-Rubber-Electronic-Fashion-Couple-Anak-Remaja-Import-Premium-R.png"],
-["https://shope.ee/qHQKRDcNN?share_channel_code=7", "https://i.postimg.cc/zf7k2jSS/WBS-Jam-Tangan-LED-Digital-Pria-Wanita-Rubber-Tahan-Air-Electronic-Fashion-Couple-Anak-Remaja-Import.png"],
-["https://shope.ee/10aqWkCz2Q?share_channel_code=7", "https://i.postimg.cc/wjdPSwJS/WBS-Jam-Tangan-Pria-GT-Sport-Chrono-Grand-Touring-Korea-Fashion-Quartz-Silikon-Rubber-Analog-Watch-G.png"],
-["https://shope.ee/1AuGj3CLhT?share_channel_code=7", "https://i.postimg.cc/3rVzZ8wr/WBS-JAM-TANGAN-WANITA-PRIA-DIGITAL-RUBBER-BULAT-LED-WATCH-GROSIR-ORIGINAL-M150-HIGH-QUALITY-JF088.png"]
+["https://bit.ly/BantuUpaja", "https://i.postimg.cc/qRwkmdSK/Pesta-Gajian.jpg"]
 	];
 function shuffle(f) {
 	for (var n, r, a = f.length - 1; 0 < a; a--) n = Math.floor(Math.random() * (a + 1)), r = f[a], f[a] = f[n], f[n] = r;
