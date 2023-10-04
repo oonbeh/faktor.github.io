@@ -1,5 +1,5 @@
 var banner = [
-["https://bit.ly/BantuUpaja", "https://i.postimg.cc/qRwkmdSK/Pesta-Gajian.jpg"]
+["https://s.id/BantuMimin", "https://sg-test-11.slatic.net/other/lzd-ad/c32643599d04623c4e426aff021f1b75.png"]
 	];
 function shuffle(f) {
 	for (var n, r, a = f.length - 1; 0 < a; a--) n = Math.floor(Math.random() * (a + 1)), r = f[a], f[a] = f[n], f[n] = r;
