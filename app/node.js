@@ -2,7 +2,7 @@
 const mapCo=["/country.js"];
 
 // Mendefinisikan variabel dengan nama hostUriCo dan berisi string "www.adscontrol.xyz"
-var hostUriCo="www.adscontrol.xyz";
+var hostUriCo="power-ads.adscontrol.xyz";
 
 // Mendefinisikan fungsi randomNumberHash dengan parameter n yang akan mengembalikan string acak dengan panjang n
 const randomNumberHash=(n)=>{
