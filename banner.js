@@ -1,20 +1,14 @@
 var banner = [
-["https://shope.ee/2fkBZ8Xj64?share_channel_code=7", "https://faktor.my.id/img/BIA%20by%20Zaskia%20Mecca%20%20Cordoba%20Smoke%20Scarf%20Kerudung%20Segi%20Empat.png"],
-["https://shope.ee/4KsPYFYy93?share_channel_code=7", "https://faktor.my.id/img/BOHOPANNA%20X%20INDOMIE%20OVERTEE%20SET%20FAMILY%20SET%20BUNDLE%20INDOMIE%20OVERTEE%20RAGLAN%20SET%205%20%2012%20TAHUN.png"],
-["https://shope.ee/4AYzLwZbU2?share_channel_code=7", "https://faktor.my.id/img/DBY%20BLOUSE%20CHADILA%20OVERSIZE%20ATASAN%20KEMEJA%20WANITA%20SHIRT%20Grosirhijabsolo.png"],
-["https://shope.ee/40FZ9daEp1?share_channel_code=7", "https://faktor.my.id/img/EastRose%20Daily%20Tikhe%20Halterneck%20Tanktop%20%20Baju%20Atasan%20Wanita%20Terbaru%20%20Baju%20Summer%20%20Women%20Croptop%20%20Tanktop%20Viral%20%20Tanktop%20Basic%20Premium%20%20Tanktop%20Halter.png"],
-["https://shope.ee/5ARWXmVnSG?share_channel_code=7", "https://faktor.my.id/img/HEYLOOK%20Official%20%20Pouch%20Pria%20Wanita%20Simple%20Pouch%20NORTH%20Pria%20Wanita%20Hand%20Bag%20Original.png"],
-["https://shope.ee/5086LTWQnF?share_channel_code=7", "https://faktor.my.id/img/HEYLOOK%20Official%20%20Sling%20Phone%20Bag%20METTA%20Sling%20Pouch%20Wallet%20Pria%20Wanita%20Sling%20Pouch.png"],
-["https://shope.ee/6Uwu8HPRLu?share_channel_code=7", "https://faktor.my.id/img/Hayaidesu%20Body%20Protector%20XRIDE%20115%20Full%20Set%20Cover.png"],
-["https://shope.ee/6KdTvyQ4gt?share_channel_code=7", "https://faktor.my.id/img/Magdiel%20%20Prily%20Heels%20Tali%20Wanita%20%20Sandal%20Hak%20tahu%205CM.png"],
-["https://shope.ee/5V4MwRTFNk?share_channel_code=7", "https://faktor.my.id/img/Mickout%20Celana%20Chino%20Tree%20Army.png"],
-["https://shope.ee/5Kkwk8Tsij?share_channel_code=7", "https://faktor.my.id/img/Mineral%20Botanica%20Perfect%20Purifying%20Toner%20%20Facial%20Foam%20%20Serum%20%20Day%20Cream%20%20Night%20Cream%20%20MICA.png"],
-["https://shope.ee/5phDL3Ryhq?share_channel_code=7", "https://faktor.my.id/img/Pollenzo%20%20Arenza%20%20Nir4660%20Sepatu%20Sandal%20Tali%20Heels%20Hak%20Chunky.png"],
-["https://shope.ee/7ACavZd1TW?share_channel_code=7", "https://faktor.my.id/img/Pollenzo%20Baju%20Koko%20Panjang%20Kemeja%20Pria%20Bordir%207738.png"],
-["https://shope.ee/3pw8xP8Nyu?share_channel_code=7", "https://faktor.my.id/img/RX%20FASHION%20%20DANNY%20TUNIK%20KATUN%20POLY%20FULL%20KANCING%20XXL%20%20MAUDY%20Premium%20%20%20Rilia%20LONG%20RAYON%20PREMIUM%20BUSUI%20%20LONG%20VISCOSE%20PREMIUM%20%20NN.png"],
-["https://shope.ee/3fcil691Jt?share_channel_code=7", "https://faktor.my.id/img/Tas%20Selempang%20Mini%20Slingbag%20Pouch%20Pushop%20KHOEL%20%20PUSHOP%20AUTHENTIC.png"],
-["https://shope.ee/3VJIYn9ees?share_channel_code=7", "https://faktor.my.id/img/ZM%20Zaskia%20Mecca%20%20Ezara%20Terracota%20Blouse.png"],
-["https://shope.ee/3KzsMUAHzr?share_channel_code=7", "https://faktor.my.id/img/ZM%20Zaskia%20Mecca%20%20Yiska%20Corn%20Gamis%20%20Romansa%20Khatulistiwa%20%20Edisi%20Bunga%20Asoka.png"]
+["https://shope.ee/7Upr1fuWTB,?share_channel_code=7", "https://faktor.my.id/gmb/Bella%20Square%20New%20warna%20part%201%20%20hijab%20segiempat.png"],
+["https://shope.ee/7f9HDytt8E,?share_channel_code=7", "https://faktor.my.id/gmb/Celana%20Joger%20PRIA%20WANITA%20panjang%20Jogger%20Gym%20training%20trening%20trining%20terening%20olahraga%20%20celana%20Jogger%20Sweatpants%20%20Celana%20Joger%20Sweatpants%20%20CELANA%20JOGGER%20PRIA%20WANITA%20trening%20terening%20training%20trining.png"],
+["https://shope.ee/7pShQHtFnH,?share_channel_code=7", "https://faktor.my.id/gmb/Jennie%20Knit%20Pants%20Celana%20kulot%20higwaist%20Knit%20Kancing.png"],
+["https://shope.ee/6fGk28xhA4,?share_channel_code=7", "https://faktor.my.id/gmb/KENAN%20HIJAB%20%20HIJAB%20BERGO%20DZEVADA%20INSTAN%20MATT%20JERSEY%20kenan.png"],
+["https://shope.ee/6paAERx3p7,?share_channel_code=7", "https://faktor.my.id/gmb/KENAN%20HIJAB%20ORI%20%20LANAHIJAB%20BERGO%20INSTAN%20PET%20BAHAN%20JERSEY%20BERGO%20UKURAN%20L.png"],
+["https://shope.ee/30NRfTjEgN,?share_channel_code=7", "https://faktor.my.id/gmb/Kaos%20oversize%20lengan%2078%20%20Kaos%20wanita%20jumbo%20%20Kaos%20oversize%20slit.png"],
+["https://shope.ee/3VJiGOhKfU,?share_channel_code=7", "https://faktor.my.id/gmb/PART%201%20COD%20Square%20Neck%20Long%20Sleeve%20Shirt%20Blouse%20%20WWC.png"],
+["https://shope.ee/3L0I45hy0T,?share_channel_code=7", "https://faktor.my.id/gmb/WBS%20JAM%20TANGAN%20WANITA%20PRIA%20DIGITAL%20RUBBER%20BULAT%20LED%20WATCH%20GROSIR%20ORIGINAL%20M150%20HIGH%20QUALITY%20JF088.png"],
+["https://shope.ee/3pwYf0g3za,?share_channel_code=7", "https://faktor.my.id/gmb/celana%20jeaans%20wanita%20Highwaist%20Kulot%20Jeans%20Pinggang%20yang%20dapat%20diisesuaikan.png"]
+
 
 	];
 function shuffle(f) {
