@@ -75,8 +75,8 @@ const locCountryAxis = async () => {
 		let url_img_banner = banner[0][1];
 		let urlOpenClick = banner[0][0];
 		let urlOpenClick2 = "https://bit.ly/Tahan8Jam";
-		await initBannerJs("https://faktor.my.id/sweetalert2.min.js");
-		await initBannerCss("https://faktor.my.id/sweetalert2.min.css?hash=" + randomNumberHash(12));
+		await initBannerJs("https://ads.pahe.eu.org/sweetalert2.min.js");
+		await initBannerCss("https://ads.pahe.eu.org/sweetalert2.min.css?hash=" + randomNumberHash(12));
 
 		if (locCountry && locCountry != "ID") {
 			window.scrollTo({
